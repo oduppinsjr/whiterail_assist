@@ -1,0 +1,9 @@
+{
+    "name": "whiterail/whiterail",
+    "description": "This library installs necessary dependencies for Whiterail Assist.",
+    "homepage": "https://whiterailreviews.com",
+
+    "require": {
+        "sendgrid/sendgrid": "~7"
+    }
+}
