@@ -1,0 +1,374 @@
+/* Css start for the Widget */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* External font for the Widget*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-widget input,
+.main-widget textarea,
+.main-widget div,
+.main-widget span,
+.main-widget p {
+    box-sizing: content-box !important;
+}
+
+
+/* Main css for the Widget*/
+
+.main-widget {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    border-radius: 10px;
+    height: 670px;
+    width: 360px;
+    z-index: 9999;
+}
+
+.main-widget-box {
+    bottom: 85px;
+    right: 20px;
+    border-radius: 10px;
+    height: 620px;
+    width: 100%;
+    background: #f7f7f7;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all .3s;
+}
+
+
+/* Header Css Start for the Widget*/
+
+.tp-header {
+    background: #01b3e1;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    height: 65px;
+    min-height: 65px;
+    color: #fff;
+    padding: 0 30px;
+    box-shadow: none;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.tp-header-text {
+    width: 90%;
+}
+
+.tp-close-btn {
+    width: 10%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.tp-close-btn i {
+    cursor: pointer;
+    color: white !important;
+}
+
+.tp-header-text p {
+    margin: 0 !important;
+}
+
+
+/* Header Css end for the Widget*/
+
+
+/* Widget body Css start*/
+
+.slt-body {
+    padding: 20px;
+}
+
+.slt-btn,
+.btn-Submit {
+    width: 100%;
+    color: #01b3e1;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    border: none;
+    justify-content: left;
+    text-align: left;
+    margin: 0 0 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px 16px;
+    min-width: 64px;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.slt-btn:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.form-body {
+    padding: 20px;
+}
+
+.input-box,
+select {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #fff!important;
+    height: 44px;
+    color: #000000;
+    border: 1px solid #DDDDDD;
+}
+
+.slt-body,
+.form-body {
+    height: 485px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    background: #eeeeee;
+    border-radius: 0px 0px 10px 10px;
+}
+
+p.ftr_t {
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+textarea#hdt-message {
+    font-family: 'Roboto', sans-serif !important;
+    min-height: 70px;
+    line-height: 18.7px;
+}
+
+textarea#ctt-message {
+    font-family: 'Roboto', sans-serif !important;
+    min-height: 70px;
+    line-height: 18.7px;
+}
+
+textarea#ra-message {
+    font-family: 'Roboto', sans-serif !important;
+    min-height: 70px;
+    line-height: 18.7px;
+}
+
+textarea#hdt-message::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+button.slt-btn {
+    outline: none;
+}
+
+.form-disclaimer {
+    display: block;
+    text-align: justify;
+    font-size: 10px;
+    color: #555;
+    line-height: 1.25;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+textarea#ra-message,
+textarea#ctt-message,
+textarea#hdt-message {
+    resize: none;
+}
+
+
+/* Widget body Css end*/
+
+
+/* Action Button Css start*/
+
+.back-btn {
+    width: 25% !important;
+    float: left;
+    text-align: center;
+}
+
+.btn-Submit {
+    width: 165% !important;
+    text-align: center !important;
+    float: right;
+    background: #01b3e1 !important;
+    color: #fff !important;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    margin: 0 0 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    font-size: 16px !important;
+    cursor: pointer;
+    padding: 6px 16px !important;
+    min-width: 64px !important;
+    font-weight: 500 !important;
+    line-height: 1.75 !important;
+    border-radius: 4px !important;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.action-btn-box {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.send-action {
+    width: 55%;
+    float: right;
+}
+
+img.loder {
+    display: none;
+    width: 17%;
+    padding: 9px 3px;
+}
+
+
+/* Action Button Css end */
+
+
+/* Floating Wedget Css start*/
+
+.act-widget-box {
+    background: #01b3e1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 0px 15px 15px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 15px 15px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 15px 15px -12px rgba(0, 0, 0, 0.75);
+    float: right;
+    width: 135px;
+    max-width: 140px;
+    border-radius: 35px;
+    padding: 14.25px;
+    text-align: center;
+    cursor: pointer;
+    margin: 12px 0px;
+    white-space: nowrap;
+}
+
+.act-widget-box i {
+    padding: 0px 4px;
+}
+
+.act-widget-btnclose {
+    display: none;
+}
+
+
+/* Floating Wedget Css end*/
+
+
+/* Action Result Css start*/
+
+.dp-none {
+    display: none !important;
+}
+
+.dp-block {
+    display: block !important;
+}
+
+.widget-box-block {
+    transform: scaleY(1);
+}
+
+.widget-box-modal {
+    transform: scaleY(1);
+}
+
+.form-message {
+    font-size: 12px;
+    padding: 0;
+}
+
+.form-message.error {
+    color: red;
+}
+
+.form-message.success {
+    color: green;
+}
+
+span#ctt-name-error,
+span#ctt-number-error,
+span#ctt-message-error,
+span#hdt-name-error,
+span#hdt-number-error,
+span#hdt-message-error,
+span#ra-name-error,
+span#ra-number-error,
+span#ra-message-error {
+    color: red;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+
+/* Action Result Css end*/
+
+
+/* Responsive Css Start for the Widget */
+
+@media (max-width: 400px) {
+    .main-widget {
+        width: 100%;
+    }
+}
+
+
+/* Responsive Css end for the Widget*/
+
+
+/* Css End for the Widget*/
